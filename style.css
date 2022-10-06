@@ -1,11 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLDz8Z1JlFc-K.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+body{
+    margin: 0%;
+    background-color: rgb(51, 50, 50);
+}
+a{
+    text-decoration: #000;
+}
+.nav{
+    /*background-color: aqua;*/
+    padding-top: 2%;
+    padding-bottom: 1%;
+    padding-left: 0.5%;
+    padding-right: 0.5%;
+    margin-top: 0%;
+    font-family: 'Poppins';
+    color: #000;
+}
 .nav-logo{
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: 'Poppins';
     font-size: larger;
 }
 .nav_tittle{
     display: flex;
     justify-content: space-between;
+    align-content: center;
 }
 
 .nav_options{
@@ -13,3 +40,52 @@
     justify-content: space-between;
     align-content: center;
 }
+
+/*---- Social Media ----*/
+.icons{
+   display : flex ;
+   column-gap : 25px ;
+}
+.icon{
+   width : 60px ;
+   height : 60px ;
+   display : inline-flex ;
+   align-items : center ;
+   justify-content : center ;
+   text-decoration : none ;
+   font-size : 26px ;
+   color : rgb(5, 5, 5) ;
+   border-radius : 50% ;
+   outline: 2px solid #fff ;
+   transition-property: outline-offset, outline-color , background-color ;
+   transition-duration: .25s ;
+ }
+.icon:hover {
+    outline-offset: 4px;
+}
+.icon:hover {
+    animation: shake .25s;
+}
+
+.icon--instagram:hover {
+    background-image : radial-gradient(circle at 30% 107%,#fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    outline-color : #a02d76 ;
+}
+.icon--twitter:hover {
+    background-color: #1da1f2 ;
+     outline-color: #1da1f2 ;
+ }
+.icon--linkedin:hover{
+    background-color: #0077b5 ;
+     outline-color : #0077b5 ;
+ }
+ .icon--github:hover {
+    background-color: #2ea44f ;
+    outline-color: #2ea44f ;
+ }
+ @keyframes shake {
+    10% { transform : rotate ( 15deg ) ; }
+    20% { transform : rotate ( -15deg ) ; }
+    30% { transform : rotate ( 15deg ) ; }
+    40% { transform : rotate ( -15deg ) ; }
+ }
