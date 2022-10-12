@@ -10,38 +10,31 @@
 }
 body{
     margin: 0%;
-    background: rgb(4,1,116);
-    background: linear-gradient(90deg, rgba(4,1,116,1) 0%, rgba(4,0,139,1) 59%, rgba(255,0,181,1) 100%);
 }
-a{
-    color : rgb(5, 5, 5) ;
-    display : inline-flex ;
-    align-items : center ;
-    justify-content : center ;
-    font-family: 'Poppins';
-    text-align: center;
-}
-a:hover{
-    font-size : 30px ;
-    color : rgb(255, 254, 254) ;
+.hero-page{
+    background-image: linear-gradient( rgba(255,0,181,1) 0%, rgb(42, 42, 102) 59%,rgba(0, 0, 0) 100%);
+    background-size: cover;
+    height: 650px;
+    position: relative;
+  
 }
 .nav{
     /*background-color: aqua;*/
     padding-top: 2%;
     padding-bottom: 1%;
-    padding-left: 0.5%;
-    padding-right: 0.5%;
+    padding-left: 1%;
+    padding-right: 1%;
     margin-top: 0%;
     font-family: 'Poppins';
     color: #000;
 }
 .nav-logo{
-    display : inline-flex ;
+    display : block ;
     align-items : center ;
     justify-content : center ;
     text-decoration : none ;
     font-size : 26px ;
-    color : rgb(5, 5, 5) ;
+    color : rgb(0, 0, 0) ;
 }
 .nav_tittle{
     display: flex;
@@ -49,13 +42,19 @@ a:hover{
     align-content: center;
 }
 
-.nav_options{
+.nav_options a:hover{
+    font-size : 28px ;
+    color : rgb(255, 254, 254) ;
+}
+.nav_options a{
     display : inline-flex ;
     align-items : center ;
-    justify-content : space-evenly ;
-    text-decoration :solid ;
+    font-family: 'Poppins';
+    display : inline-flex ;
+    justify-content: space-around;
+    text-decoration: solid ;
     font-size : 26px ;
-    color : rgb(5, 5, 5) ;
+    color : rgb(0, 0, 0) ;
 }
 
 /*---- Social Media ----*/
@@ -106,3 +105,11 @@ a:hover{
      30% { transform : rotate ( 15deg ) ; }
      40% { transform : rotate ( -15deg ) ; }
   }
+.landing-txt h3{
+    display: flexbox;
+    text-align: center;
+    font-size: 100px;
+    background: -webkit-linear-gradient(rgb(0, 0, 0), rgb(92, 0, 66));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
