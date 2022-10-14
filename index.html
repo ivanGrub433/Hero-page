@@ -7,12 +7,14 @@
     <title>Hero-page</title>
     <link href="/style.css" rel="stylesheet" type="text/css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 <body>
     <div class="hero-page">
         <div class="nav">
             <div class="nav_tittle">
-                <a class="nav-logo" href="#Home">Blockchain wb</a>
+                <img class="nav-logo" href="#Home" src="mnd.1.svg" alt="logo img">
                 <div class="nav_options">
                     <a href="#News">News</a>
                     <a href="#Contact">Contact</a>
@@ -35,9 +37,15 @@
             </div>
         </div>
         <div class="landing-txt">
-            <h3>Hello Bitcoin</h3>
-            <button class="button-64" role="button"><span class="text">let´s go!</span></button>
+            <h3 data-aos="fade-left">Hello Bitcoin</h3>
+            <p data-aos="fade-right">
+                Bitcoin is a digital currency and payment system used primarily as a method of payment for goods and services.
+            </p>
+            <button class="button-64" role="button"><span class="text">let's go!</span></button>
         </div>
     </div>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
