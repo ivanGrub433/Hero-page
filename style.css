@@ -44,16 +44,22 @@ body{
     align-content: center;
 }
 
+.nav_options{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
 .nav_options a:hover{
     color : rgb(255, 254, 254) ;
     outline-offset: 4px;
 }
 .nav_options a{
+    margin-right: 10%;
     display : inline-flex ;
     align-items : center ;
     font-family: 'Poppins';
     display : inline-flex ;
-    justify-content: space-around;
+    justify-content: space-around 2px;
     text-decoration: solid ;
     font-size : 26px ;
     color : rgb(0, 0, 0) ;
